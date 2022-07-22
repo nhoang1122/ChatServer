@@ -48,6 +48,7 @@ export default class ChatWindow extends Component {
     axios.put( url + `/${id}`, { text } ).then( response => {
       this.setState({ messages: response.data });
     });
+    
   }
 
   removeMessage( id ) {
